@@ -10,6 +10,7 @@
 	<version>3.0.0</version>
 	<description>CG_VISFORMS_XML_DESCRIPTION</description>
 	<namespace path="src">ConseilGouz\Plugin\Visforms\Cgsecure</namespace>
+	<scriptfile>script.php</scriptfile>
 	<files>
 		<folder plugin="cgsecure">services</folder>
 		<folder>src</folder>
