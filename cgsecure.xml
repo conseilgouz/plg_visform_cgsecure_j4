@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="4.0" type="plugin" group="visforms" method="upgrade">
+	<name>CG_VISFORMS</name>
+	<author>ConseilGouz</author>
+	<creationDate>2023-10-28</creationDate>
+	<copyright>(C)2023 ConseilGouz. All rights reserved.</copyright>
+	<license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+	<authorEmail>pascal.leconte@conseilgouz.com</authorEmail>
+	<authorUrl>www.conseilgouz.com</authorUrl>
+	<version>3.0.0</version>
+	<description>CG_VISFORMS_XML_DESCRIPTION</description>
+	<namespace path="src">ConseilGouz\Plugin\Visforms\Cgsecure</namespace>
+	<files>
+		<folder plugin="cgsecure">services</folder>
+		<folder>src</folder>
+		<filename>index.html</filename>
+	</files>
+	<languages>
+		<language tag="fr-FR">language/fr-FR/plg_visforms_cgsecure.ini</language>
+		<language tag="fr-FR">language/fr-FR/plg_visforms_cgsecure.sys.ini</language>
+		<language tag="en-GB">language/en-GB/plg_visforms_cgsecure.ini</language>
+		<language tag="en-GB">language/en-GB/plg_visforms_cgsecure.sys.ini</language>
+	</languages>
+	<config>
+        <fields name="params">
+            <fieldset name="basic" addfieldprefix="ConseilGouz\Plugin\Visforms\Cgsecure\Field">
+				<field name="version" type="version"  margintop="-3em"  extension="cgsecure" />
+				<field name="note" type="note"  label="CGSECURE_NOTE" description="CGSECURE_NOTE_DESC" />
+			</fieldset>
+		</fields>
+	</config>	
+    <updateservers>
+       <server type="extension" priority="1" name="CG_VISFORMS">https://raw.githubusercontent.com/conseilgouz/updates_github/master/plg_visform_cgsecure_update.xml</server>
+    </updateservers>
+	
+</extension>
