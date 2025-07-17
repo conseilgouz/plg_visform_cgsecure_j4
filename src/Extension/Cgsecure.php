@@ -13,7 +13,7 @@ namespace ConseilGouz\Plugin\Visforms\Cgsecure\Extension;
 defined('_JEXEC') or die();
 use Joomla\CMS\Plugin\CMSPlugin;
 use Joomla\Event\SubscriberInterface;
-use ConseilGouz\CGSecure\Helper\Cgipcheck;
+use ConseilGouz\CGSecure\Cgipcheck;
 use Visolutions\Component\Visforms\Site\Event\Visforms\VisformsFormPrepareEvent;
 
 class Cgsecure extends CMSPlugin implements SubscriberInterface
