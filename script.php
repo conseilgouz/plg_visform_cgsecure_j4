@@ -16,7 +16,7 @@ use Joomla\Filesystem\File;
 use Joomla\Filesystem\Folder;
 use Joomla\Log\Log;
 
-class plgvisformcgsecureInstallerScript
+class plgvisformscgsecureInstallerScript
 {
 	private $min_joomla_version      = '4.0.0';
 	private $min_php_version         = '7.2';
